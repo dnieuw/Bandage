@@ -31,6 +31,7 @@ INCLUDEPATH += ui
 
 SOURCES += \
     program/main.cpp\
+    program/dotplot.cpp \
     program/settings.cpp \
     program/globals.cpp \
     program/graphlayoutworker.cpp \
@@ -121,6 +122,7 @@ SOURCES += \
 
 HEADERS  += \
     program/settings.h \
+    program/dotplot.h \
     program/globals.h \
     program/graphlayoutworker.h \
     graph/debruijnnode.h \
@@ -258,10 +260,6 @@ FORMS    += \
 
 RESOURCES += \
     images/images.qrc
-
-
-unix:INCLUDEPATH += /usr/include/
-unix:LIBS += -L/usr/lib
 
 # The following settings are compatible with OGDF being built in 64 bit release mode using Visual Studio 2013
 win32:LIBS += -lpsapi
